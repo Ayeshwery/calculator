@@ -14,7 +14,7 @@
 }
 
 .calculator{
-    background-color: bisque;
+    background-color: rgb(49, 45, 39);
     width: 100%;
     max-width: 375px;
     min-height: 640px;
@@ -58,7 +58,65 @@
 }
 
 .keys{
-    background-color: crimson;
+    background-color: rgb(8, 8, 8);
     padding: 1.5rem;
-    border-radius: 1.5rem 1.5rem ;
+    border-radius: 1.5rem 1.5rem 0 0 ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap:1rem;
+    box-shadow: 0px -2px 16px rebeccapurple(0,0,0,0,0.2);
+
 }
+.keys .key{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    padding-top: 100%;
+    background-color: rgb(228, 213, 228);
+    border-radius: 1rem;
+    user-select: none;
+}
+
+.keys .key span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(8, 8, 8);
+}
+
+.keys .key:hover{
+    box-shadow: inset 0px 0px 8px cornflowerblue;
+}
+
+.keys .key.opertoins span{
+    color: blue;
+}
+
+.keys .key.action span{
+    color: rgb(14, 202, 23);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
